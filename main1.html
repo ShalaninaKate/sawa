@@ -7,7 +7,7 @@
   <!-- <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> -->
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-  <title>Pool</title>
+  <title>Main</title>
   <!-- <link rel="preload" href="fonts/PoppinsLight.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="fonts/PoppinsMedium.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="fonts/PoppinsRegular.woff2" as="font" type="font/woff2" crossorigin>
@@ -197,21 +197,119 @@
     <main class="page">
 
       <div class="page__container">
-        <div class="pool-position card">
-          <div class="pool-position__header">
-            <div class="pool-position__title">Positions</div>
-            <a href="#" class="pool-position__btn button">New Position</a>
-          </div>
-          <div class="pool-position__connect">
-            <svg class="pool-position__connect-icon">
-              <use xlink:href="img/sprite.svg#file-tray"></use>
-            </svg>
-            <p class="pool-position__connect-text">Your active V3 liquidity positions will
-              appear here.</p>
-            <button class="pool-position__connect-btn button">Connect Wallet</button>
+        <div class="swap">
+          <h1 class="swap__title title">Swap</h1>
+          <form action="#" class="swap__form form card">
+            <div class="swap__form-items">
+              <div class="swap__form-item form__item">
+                <label for="formPay" class="swap__form-label form__label">You pay</label>
+                <div class="form__input input">
+                  <div class="input__item">
+                    <input id="formPay" type="text" value="0" class="input__control">
+                    <button data-path="select-token" data-animation="fadeInUp" type="button" class="input__select">
+                      <div class="input__select-token token">
+                        <img class="token__icon" src="./img/cryptocurrency/ethereum2.svg" alt="eth">
+                        <p class="token__name">ETH</p>
+                      </div>
+                      <svg class="input__select-icon">
+                        <use xlink:href="img/sprite.svg#arrow"></use>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <div class="form__info-bottom form__info-bottom--right">
+                  <p class="form__info-bottom-text">Balance: 0.011</p>
+                  <a href="#" class="form__info-bottom-link link-red">Max</a>
+                </div>
+              </div>
+              <svg class="swap__form-icon">
+                <use xlink:href="img/sprite.svg#arrow-big"></use>
+              </svg>
+              <div class="swap__form-item form__item">
+                <label for="formReceive" class="swap__form-label form__label">You receive</label>
+                <div class="form__input input">
+                  <div class="input__item">
+                    <input id="formReceive" type="text" value="0" class="input__control">
+                    <button data-path="select-token" data-animation="fadeInUp" class="input__select">
+                      <div class="input__select-token token">
+                        <img class="token__icon" src="./img/cryptocurrency/usdc.svg" alt="usdc">
+                        <p class="token__name">USDC</p>
+                      </div>
+                      <svg class="input__select-icon">
+                        <use xlink:href="img/sprite.svg#arrow"></use>
+                      </svg>
+                    </button>
+                  </div>
+
+                </div>
+                <div class="form__info-bottom form__info-bottom--right">
+                  <p class="form__info-bottom-text">Balance: 0.011</p>
+                </div>
+              </div>
+            </div>
+            <button class="swap__form-button form__button button disable">Enter Amount</button>
+          </form>
+          <div class="swap__protocol">Powered
+            <a href="#" class="swap__protocol-link link-red">by Uniswap</a>
+            Protocol V3
           </div>
         </div>
-      </div>
+        <div class="main-info">
+          <div class="main-info__top">
+            <div class="main-info__item main-info__item--swap">
+              <h5 class="main-info__title">Обмен стал проще</h5>
+              <div class="main-info__table">
+                <div class="main-info__table-row">
+                  <div class="main-info__table-head">
+                    <img class="main-info__table-icon" src="./img/cryptocurrency/ethereum.svg" alt="eth">
+                    <p class="main-info__table-name">Ethereum</p>
+                    <p class="main-info__table-shortname">ETH</p>
+                  </div>
+                  <div class="main-info__table-data main-info__table-data--pc">0,28%</div>
+                  <div class="main-info__table-data ">$2 909,56</div>
+                </div>
+                <div class="main-info__table-row">
+                  <div class="main-info__table-head">
+                    <img class="main-info__table-icon" src="./img/cryptocurrency/polygon.svg" alt="polygon">
+                    <p class="main-info__table-name">Polygon</p>
+                    <p class="main-info__table-shortname">MATIC</p>
+                  </div>
+                  <div class="main-info__table-data main-info__table-data--pc">0,28%</div>
+                  <div class="main-info__table-data ">$2 909,56</div>
+                </div>
+                <div class="main-info__table-row">
+                  <div class="main-info__table-head">
+                    <img class="main-info__table-icon" src="./img/cryptocurrency/bitcoin.svg" alt="btc">
+                    <p class="main-info__table-name">Bitcoin</p>
+                    <p class="main-info__table-shortname">BTC</p>
+                  </div>
+                  <div class="main-info__table-data main-info__table-data--pc">0,28%
+                  </div>
+                  <div class="main-info__table-data ">$2 909,56</div>
+                </div>
+
+              </div>
+            </div>
+            <div class="main-info__item main-info__item--uniswap">
+              <p class="main-info__text">Предоставляйте ликвидность пулам по протоколу <a href="#"
+                  class="main-info__link">Uniswap</a> и получайте коммиссию
+                за свопы</p>
+            </div>
+
+          </div>
+          <div class="main-info__bottom">
+            <div class="main-info__item main-info__item--rwa">
+              <a href="#" class="main-info__bottom-link">RWA marketplace</a>
+            </div>
+            <div class="main-info__item main-info__item--sawa">
+              <a href="#" class="main-info__bottom-link">Sawa Expert</a>
+            </div>
+            <div class="main-info__item main-info__item--twitter">
+              <a href="#" class="main-info__bottom-link">Twitter</a>
+            </div>
+          </div>
+        </div>
+
     </main>
     <footer class="footer">
 
