@@ -1,11 +1,749 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><!-- <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> --><meta http-equiv="X-UA-Compatible" content="ie=edge"><title>Liquidity</title><!-- <link rel="preload" href="fonts/PoppinsLight.woff2" as="font" type="font/woff2" crossorigin>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> -->
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <title>Liquidity</title>
+  <!-- <link rel="preload" href="fonts/PoppinsLight.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="fonts/PoppinsMedium.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="fonts/PoppinsRegular.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="fonts/PoppinsSemiBold.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="fonts/Vaground.woff2" as="font" type="font/woff2" crossorigin> --><link rel="stylesheet" href="css/main.css"><script defer="defer" src="js/main.js"></script></head><body><div class="wrapper"><div class="wallet"><div class="wallet__top"><button type="button" class="wallet__close-btn js-wallet-close"><svg class="wallet__close-icon"><use xlink:href="img/sprite.svg#arrows"></use></svg></button><div class="wallet__user"><a href="#" class="wallet__user-img wallet-img"><svg class="wallet__user-icon wallet-icon"><use xlink:href="img/sprite.svg#logo-icon"></use></svg> </a><span class="wallet__user-address">0×235…643657</span></div><button class="wallet__exit-btn"><svg class="wallet__exit-icon"><use xlink:href="img/sprite.svg#exit"></use></svg></button></div><div class="wallet__balance wallet-balance"><label class="wallet-balance__label">Balance</label><div class="wallet-balance__total">$6,985.57</div><div class="wallet-balance__trend"><svg class="wallet-balance__trend-icon"><use xlink:href="img/sprite.svg#arrow-big"></use></svg> <span class="wallet-balance__trend-sum">$56.87</span> <span class="wallet-balance__trend-pc">(0.82%)</span></div><!-- <div class="wallet-balance__trend wallet-balance__trend--fall">
+  <link rel="preload" href="fonts/Vaground.woff2" as="font" type="font/woff2" crossorigin> -->
+  <link rel="stylesheet" href="css/main.css">
+
+  <script defer src="js/main.js"></script>
+</head>
+
+<body>
+
+  <div class="wrapper">
+    <div class="wallet">
+  <div class="wallet__top">
+    <button type="button" class="wallet__close-btn js-wallet-close">
+      <svg class="wallet__close-icon">
+        <use xlink:href="img/sprite.svg#arrows"></use>
+      </svg>
+    </button>
+    <div class="wallet__user">
+      <a href="#" class="wallet__user-img wallet-img">
+        <svg class="wallet__user-icon wallet-icon">
+          <use xlink:href="img/sprite.svg#logo-icon"></use>
+        </svg>
+      </a>
+      <span class="wallet__user-address">0×235…643657</span>
+      </a>
+    </div>
+    <button class="wallet__exit-btn">
+      <svg class="wallet__exit-icon">
+        <use xlink:href="img/sprite.svg#exit"></use>
+      </svg>
+    </button>
+  </div>
+  <div class="wallet__balance wallet-balance">
+    <label class="wallet-balance__label">Balance</label>
+    <div class="wallet-balance__total">$6,985.57</div>
+    <div class="wallet-balance__trend">
       <svg class="wallet-balance__trend-icon">
         <use xlink:href="img/sprite.svg#arrow-big"></use>
       </svg>
       <span class="wallet-balance__trend-sum">$56.87</span>
       <span class="wallet-balance__trend-pc">(0.82%)</span>
-    </div> --></div><div class="wallet__actions"><a href="#" class="wallet__action wallet__action--buy"><svg class="wallet__action-icon"><use xlink:href="img/sprite.svg#card"></use></svg><p class="wallet__action-text">Buy</p></a><a href="#" class="wallet__action wallet__action--view"><svg class="wallet__action-icon"><use xlink:href="img/sprite.svg#view"></use></svg><p class="wallet__action-text">View NFTs</p></a></div><div class="wallet__line"></div><div class="wallet__tabs"><nav class="wallet__tabs-navigation"><button class="wallet__tab-title">Tokens</button> <button class="wallet__tab-title">NFTs</button> <button class="wallet__tab-title">Pools</button> <button class="wallet__tab-title active">Activity</button></nav><div class="wallet__tabs-content assets"><div class="wallet__tabs-body assets__item"><div class="assets__item-token"><img src="../img/cryptocurrency/ethereum.svg" alt="token" class="assets__item-icon"><div class="assets__item-info"><p class="assets__item-name">Ethereum</p><div class="assets__item-trend"><span class="assets__item-trend-sum">$2.44</span> <span class="assets__item-trend-pc">+4.73%</span></div></div></div><div class="assets__item-sum"><span class="assets__item-amount">7 153.13</span> <span class="assets__item-usd">$17,437.81</span></div></div><div class="wallet__tabs-body assets__item"><div class="assets__item-token"><img src="../img/cryptocurrency/bitcoin.svg" alt="token" class="assets__item-icon"><div class="assets__item-info"><p class="assets__item-name">Bitcoin</p><div class="assets__item-trend assets__item-trend--fall"><span class="assets__item-trend-sum">$64.723.12</span> <span class="assets__item-trend-pc">-1.22%</span></div></div></div><div class="assets__item-sum"><span class="assets__item-amount">12.26</span> <span class="assets__item-usd">$620,372.13</span></div></div><div class="wallet__tabs-body assets__item"><div class="assets__item-token"><img src="../img/cryptocurrency/polygon.svg" alt="token" class="assets__item-icon"><div class="assets__item-info"><p class="assets__item-name">Polygon</p><div class="assets__item-trend"><span class="assets__item-trend-sum">$134.44</span> <span class="assets__item-trend-pc">+1.22%</span></div></div></div><div class="assets__item-sum"><span class="assets__item-amount">12.26</span> <span class="assets__item-usd">$620,372.13</span></div></div><div class="wallet__tabs-body assets__item"><div class="assets__item-token"><img src="../img/cryptocurrency/dogecoin.svg" alt="token" class="assets__item-icon"><div class="assets__item-info"><p class="assets__item-name">Dogecoin</p><div class="assets__item-trend"><span class="assets__item-trend-sum">$134.44</span> <span class="assets__item-trend-pc">+1.22%</span></div></div></div><div class="assets__item-sum"><span class="assets__item-amount">12.26</span> <span class="assets__item-usd">$620,372.13</span></div></div></div></div></div><header class="header"><div class="header__container"><a href="#" class="header__logo logo"><svg class="header__logo-icon logo-icon"><use xlink:href="img/sprite.svg#logo"></use></svg><p class="header__logo-text logo-text">SAWA</p></a><nav class="header__menu menu"><ul class="menu__list"><li class="menu__item"><a href="#" class="menu__link active">Swap</a></li><li class="menu__item"><a href="#" class="menu__link">Pool</a></li></ul></nav><div class="header__search"><form action="#" class="header__search-form search-form"><input class="search-form__input" autocomplete="off" type="text" placeholder="Search Tokens"> <button type="submit" class="search-form__btn"><svg class="search-form__btn-icon"><use xlink:href="img/sprite.svg#search"></use></svg></button></form></div><button type="button" class="icon-menu icon-menu--burger js-wallet-open"><span></span></button><div class="header__wallet wallet-header"><a href="#" class="wallet-header__img wallet-img"><svg class="wallet-header__icon wallet-icon"><use xlink:href="img/sprite.svg#logo-icon"></use></svg> </a><button class="wallet-header__btn js-wallet-open"><span class="wallet-header__address">0×235…643657</span> <svg class="wallet-header__arrow"><use xlink:href="img/sprite.svg#arrow"></use></svg></button></div></div></header><main class="page"><div class="page__container"><div class="liquidity card"><a href="#" class="liquidity__btn-back"><svg class="liquidity__btn-icon icon-back"><use xlink:href="img/sprite.svg#arrows"></use></svg></a><h2 class="liquidity__title">Add liquidity</h2><div class="liquidity__header"><div class="liquidity__header-pair pair-token"><div class="pair-token__icons"><img class="pair-token__image pair-token__image--1" src="./img/cryptocurrency/ethereum2.svg" alt="token"> <img class="pair-token__image pair-token__image--2" src="./img/cryptocurrency/tether.svg" alt="token"></div><div class="pair-token__names"><span class="pair-token__name pair-token__name--1">ETH</span><span>/</span><span class="pair-token__name pair-token__name--2">USDT</span></div></div><a href="#" class="liquidity__header-link link-range">out range</a></div><div class="liquidity__table"><div class="liquidity__table-row"><div class="liquidity__table-header token"><img class="token__icon" src="./img/cryptocurrency/ethereum2.svg" alt="token"><p class="token__name">ETH</p></div><div class="liquidity__table-data">1.000</div></div><div class="liquidity__table-row"><div class="liquidity__table-header token"><img class="token__icon" src="./img/cryptocurrency/usdt.svg" alt="token"><p class="token__name">USDT</p></div><div class="liquidity__table-data">0.006</div></div><div class="liquidity__table-row"><div class="liquidity__table-header">Fee tier</div><div class="liquidity__table-data">0.05%</div></div></div><div class="liquidity__price price-range"><div class="price-range__header"><h4 class="price-range__title">Select range</h4><div class="price-range__tabs"><button class="price-range__tab active">ETH</button> <button class="price-range__tab">USDT</button></div></div><div class="price-range__items"><button class="price-range__item item-price-range"><h5 class="item-price-range__title">Min price</h5><div class="item-price-range__price">0.002</div><div class="item-price-range__pair">USDT per ETH</div><p class="item-price-range__descr">Your position will be 100% composed of USDT at this price</p></button> <button class="price-range__item item-price-range"><h5 class="item-price-range__title">Max price</h5><div class="item-price-range__price">0.002</div><div class="item-price-range__pair">USDT per ETH</div><p class="item-price-range__descr">Your position will be 100% composed of USDT at this price</p></button> <button class="price-range__item item-price-range item-price-range--current"><h5 class="item-price-range__title">Current price</h5><div class="item-price-range__price">0.00174</div><div class="item-price-range__pair">USDT per ETH</div></button></div></div><div class="liquidity__deposit"><h4 class="liquidity__deposit-title">Deposit amounts</h4><div class="liquidity__deposit-input input"><div class="input__item"><input type="text" value="0" class="input__control"> <button data-path="select-token" data-animation="fadeInUp" class="input__select"><div class="input__select-token token"><img class="token__icon" src="./img/cryptocurrency/usdc.svg" alt="usdc"><p class="token__name">USDC</p></div><svg class="input__select-icon"><use xlink:href="img/sprite.svg#arrow"></use></svg></button></div><div class="input__balance"><div class="input__balance-col"><p class="input__balance-text">$1.00</p></div><div class="input__balance-col"><p class="input__balance-text">Balance: 0.011</p><a href="#" class="input__balance-text link-red">Max</a></div></div></div></div><button class="liquidity__button button">Preview</button></div></div></main><footer class="footer"><div class="footer__container"><div class="footer__top"><a href="#" class="footer__logo logo"><svg class="footer__logo-icon logo-icon logo-icon--white"><use xlink:href="img/sprite.svg#logo"></use></svg><p class="footer__logo-text logo-text logo-text--white">SAWA</p></a><div class="footer__top-text">SAWA is a decentralized multi-chain fundraising platform enabling projects to raise capital and promise safety to early stage investors. Stake Infinite Launch tokens to get priority-access to promising projects.</div></div><div class="footer__main"><div data-spollers="768,max" data-one-spoller class="footer__menu menu-footer"><div class="menu-footer__column"><button type="button" data-spoller class="menu-footer__title">General</button><ul class="menu-footer__list"><li><a href="#" class="menu-footer__link">Lock Tier</a></li><li><a href="#" class="menu-footer__link">Stake/Farm token</a></li><li><a href="#" class="menu-footer__link">Privacy Policy</a></li><li><a href="#" class="menu-footer__link">Terms of use</a></li><li><a href="#" class="menu-footer__link">About us</a></li><li><a href="#" class="menu-footer__link">Apply to Launch</a></li></ul></div><div class="menu-footer__column"><button type="button" data-spoller class="menu-footer__title">Help</button><ul class="menu-footer__list"><li><a href="#" class="menu-footer__link">How to join IDO</a></li><li><a href="#" class="menu-footer__link">FAQ</a></li></ul></div><div class="menu-footer__column"><button type="button" data-spoller class="menu-footer__title">Communities</button><ul class="menu-footer__list"><li><a href="#" class="menu-footer__link">Indonesia</a></li><li><a href="#" class="menu-footer__link">О Turkey</a></li><li><a href="#" class="menu-footer__link">China</a></li><li><a href="#" class="menu-footer__link">VietNam</a></li><li><a href="#" class="menu-footer__link">Thailand</a></li></ul></div><div class="menu-footer__column"><button type="button" data-spoller class="menu-footer__title">Token</button><ul class="menu-footer__list"><li><a href="#" class="menu-footer__link">CoinGecko</a></li><li><a href="#" class="menu-footer__link">CoinMarketCap</a></li><li><a href="#" class="menu-footer__link">CryptoRank</a></li></ul></div></div><div class="footer__socials"><a href="#" class="footer__socials-item"><svg class="footer__socials-icon"><use xlink:href="img/sprite.svg#twitter"></use></svg> </a><a href="#" class="footer__socials-item"><svg class="footer__socials-icon"><use xlink:href="img/sprite.svg#telegram"></use></svg> </a><a href="#" class="footer__socials-item"><svg class="footer__socials-icon"><use xlink:href="img/sprite.svg#discord"></use></svg></a></div></div></div></footer></div><div class="modal"><!-- Select a token --><div class="modal__container" role="dialog" aria-modal="true" data-target="select-token"><button class="modal__close js-modal-close" aria-label="close modal"><svg class="modal__close-icon"><use xlink:href="img/sprite.svg#close"></use></svg></button><h2 class="modal__title">Select a token</h2><div class="modal__body modal-select-token"><form action="#" class="modal-select-token__search search-form"><input class="search-form__input" autocomplete="off" type="text" placeholder="Search Tokens"> <button type="submit" class="search-form__btn"><svg class="search-form__btn-icon"><use xlink:href="img/sprite.svg#search"></use></svg></button></form><div class="modal-select-token__list"><button class="modal-select-token__btn token"><img class="token__icon" src="./img/cryptocurrency/ethereum2.svg" alt="token"><p class="token__name">ETH</p></button> <button class="modal-select-token__btn token"><img class="token__icon" src="./img/cryptocurrency/dai.svg" alt="token"><p class="token__name">DAI</p></button> <button class="modal-select-token__btn token"><img class="token__icon" src="./img/cryptocurrency/usdc.svg" alt="token"><p class="token__name">USDC</p></button> <button class="modal-select-token__btn token"><img class="token__icon" src="./img/cryptocurrency/usdt.svg" alt="token"><p class="token__name">USDT</p></button></div><div class="modal-select-token__separation line-separation"></div><h3 class="modal-select-token__title">Your tokens</h3><div class="modal-select-token__assets assets"><button class="modal-select-token__item assets__item"><div class="assets__item-token"><img src="../img/cryptocurrency/ethereum.svg" alt="token" class="assets__item-icon"><div class="assets__item-info"><p class="assets__item-name">Ethereum</p><div class="assets__item-name-short">ETH</div></div></div><div class="assets__item-sum"><span class="assets__item-amount">7 153.13</span></div></button> <button class="modal-select-token__item assets__item"><div class="assets__item-token"><img src="../img/cryptocurrency/bitcoin.svg" alt="token" class="assets__item-icon"><div class="assets__item-info"><p class="assets__item-name">Bitcoin</p><div class="assets__item-name-short">BTC</div></div></div><div class="assets__item-sum"><span class="assets__item-amount">12.26</span></div></button> <button class="modal-select-token__item assets__item"><div class="assets__item-token"><img src="../img/cryptocurrency/polygon.svg" alt="token" class="assets__item-icon"><div class="assets__item-info"><p class="assets__item-name">Polygon</p><div class="assets__item-name-short">MATIC</div></div></div><div class="assets__item-sum"><span class="assets__item-amount">494.23</span></div></button> <button class="modal-select-token__item assets__item"><div class="assets__item-token"><img src="../img/cryptocurrency/dogecoin.svg" alt="token" class="assets__item-icon"><div class="assets__item-info"><p class="assets__item-name">Dogecoin</p><div class="assets__item-name-short">DOGE</div></div></div><div class="assets__item-sum"><span class="assets__item-amount">7 153.13</span></div></button></div></div></div><!-- Confirm swap --><div class="modal__container" role="dialog" aria-modal="true" data-target="сonfirm-swap"><button class="modal__close js-modal-close" aria-label="close modal"><svg class="modal__close-icon"><use xlink:href="img/sprite.svg#close"></use></svg></button><h2 class="modal__title">Confirm swap</h2><div class="modal__body modal-confirm-swap"><div class="modal-confirm-swap__review review-swap"><div class="review-swap__item"><label class="review-swap__item-label">You pay</label><div class="review-swap__item-token"><div class="review-swap__item-amount">1.00 USDT</div><img class="review-swap__item-icon" src="./img/cryptocurrency/tether.svg" alt="token"></div><div class="review-swap__item-sum">$1.00</div></div><div class="review-swap__separation line-separation"></div><div class="review-swap__item"><label class="review-swap__item-label">You receive</label><div class="review-swap__item-token"><div class="review-swap__item-amount">0.99935 USDC</div><img class="review-swap__item-icon" src="./img/cryptocurrency/usdc.svg" alt="token"></div><div class="review-swap__item-sum">$1.00 <span class="review-swap__item-pc">(-0.03%)</span></div></div></div><div class="modal-confirm-swap__separation line-separation"></div><div class="modal-confirm-swap__step confirm-stet"><div class="confirm-stet__item"><div class="confirm-stet__check"><svg class="confirm-stet__icon"><use xlink:href="img/sprite.svg#check"></use></svg></div><p class="confirm-stet__text">Sign message</p></div><div class="confirm-stet__item"><div class="confirm-stet__swap"><svg class="confirm-stet__icon"><use xlink:href="img/sprite.svg#swap"></use></svg></div><p class="confirm-stet__text">Confirm swap in wallet <span class="confirm-stet__text-gray">Learn more about swap</span></p></div></div></div></div><!-- Swap Success! --><div class="modal__container" role="dialog" aria-modal="true" data-target="swap-success"><button class="modal__close js-modal-close" aria-label="close modal"><svg class="modal__close-icon"><use xlink:href="img/sprite.svg#close"></use></svg></button><div class="modal__body modal-success"><svg class="modal-success__icon"><use xlink:href="img/sprite.svg#check-success"></use></svg><h2 class="modal-success__title">Swap Success!</h2><div class="modal-success__swap"><div class="modal-success__swap-item"><img src="../img/cryptocurrency/tether.svg" alt="token"><div class="modal-success__swap-amount">1.00 USDT</div></div><div class="modal-success__swap-item"><svg class="modal-success__swap-icon"><use xlink:href="img/sprite.svg#arrow-big"></use></svg></div><div class="modal-success__swap-item"><img src="../img/cryptocurrency/usdc.svg" alt="token"><div class="modal-success__swap-amount">1.00065 USDC</div></div></div><button class="modal-success__button button js-modal-close">Main Page</button></div></div><!-- Remove liquidity --><div class="modal__container" role="dialog" aria-modal="true" data-target="remove-liquidity"><button class="modal__close js-modal-close" aria-label="close modal"><svg class="modal__close-icon"><use xlink:href="img/sprite.svg#close"></use></svg></button><h2 class="modal__title">Remove liquidity</h2><div class="modal__body modal-remove-liquidity"><div class="liquidity__table liquidity__table--reverse"><div class="liquidity__table-row"><div class="liquidity__table-data token token--reverse"><img class="token__icon" src="./img/cryptocurrency/ethereum2.svg" alt="token"><p class="token__amount">0.004</p></div><div class="liquidity__table-header">Pooled ETH:</div></div><div class="liquidity__table-row"><div class="liquidity__table-header token token--reverse"><img class="token__icon" src="./img/cryptocurrency/usdt.svg" alt="token"><p class="token__amount">0</p></div><div class="liquidity__table-header">Pooled USDT:</div></div><p class="liquidity__table-text">You will also collect fees earned from this position</p><div class="liquidity__table-row"><div class="liquidity__table-data token token--reverse"><img class="token__icon" src="./img/cryptocurrency/ethereum2.svg" alt="token"><p class="token__amount">0.004</p></div><div class="liquidity__table-header">USDT fees earned:</div></div><div class="liquidity__table-row"><div class="liquidity__table-header token token--reverse"><img class="token__icon" src="./img/cryptocurrency/usdt.svg" alt="token"><p class="token__amount">0</p></div><div class="liquidity__table-header">ETH fees earned:</div></div></div><button class="liquidity__button button" data-path="waiting" data-animation="fadeInUp">Remove</button></div></div><!-- waiting --><div class="modal__container" role="dialog" aria-modal="true" data-target="waiting"><button class="modal__close js-modal-close" aria-label="close modal"><svg class="modal__close-icon"><use xlink:href="img/sprite.svg#close"></use></svg></button><div class="modal__body modal-waiting"><div class="modal-waiting__progress"><img src="../img/svg/progress.svg" alt="progress"></div><h2 class="modal-waiting__title">Waiting for confirmation</h2><div class="modal-waiting__liquidity">Supplying 0.006898976 ETH and 1 USDT</div><p class="modal-waiting__text">Confirm this transaction in your wallet</p></div></div><!--Transaction Submitted  --><div class="modal__container" role="dialog" aria-modal="true" data-target=""><button class="modal__close js-modal-close" aria-label="close modal"><svg class="modal__close-icon"><use xlink:href="img/sprite.svg#close"></use></svg></button><div class="modal__body modal-transaction-success"><svg class="modal-transaction-success__icon"><use xlink:href="img/sprite.svg#check-success"></use></svg><h2 class="modal-transaction-success__title">Transaction Submitted</h2><button class="modal-transaction-success__button button js-modal-close">Close</button></div></div><!-- Add liquidity --><div class="modal__container" role="dialog" aria-modal="true" data-target="add-liquidity"><button class="modal__close js-modal-close" aria-label="close modal"><svg class="modal__close-icon"><use xlink:href="img/sprite.svg#close"></use></svg></button><h2 class="modal__title">Add liquidity</h2><div class="modal__body modal-add-liquidity"><div class="liquidity__header"><div class="liquidity__header-pair pair-token"><div class="pair-token__icons"><img class="pair-token__image pair-token__image--1" src="./img/cryptocurrency/ethereum2.svg" alt="token"> <img class="pair-token__image pair-token__image--2" src="./img/cryptocurrency/tether.svg" alt="token"></div><div class="pair-token__names"><span class="pair-token__name pair-token__name--1">ETH</span><span>/</span><span class="pair-token__name pair-token__name--2">USDT</span></div></div><a href="#" class="liquidity__header-link link-range">in range</a></div><div class="liquidity__table"><div class="liquidity__table-row"><div class="liquidity__table-header token"><img class="token__icon" src="./img/cryptocurrency/ethereum2.svg" alt="token"><p class="token__name">ETH</p></div><div class="liquidity__table-data">1.000</div></div><div class="liquidity__table-row"><div class="liquidity__table-header token"><img class="token__icon" src="./img/cryptocurrency/usdt.svg" alt="token"><p class="token__name">USDT</p></div><div class="liquidity__table-data">0.006</div></div><div class="liquidity__table-row"><div class="liquidity__table-header">Fee tier</div><div class="liquidity__table-data">0.05%</div></div></div><div class="liquidity__price price-range"><div class="price-range__header"><h4 class="price-range__title">Set price range</h4><div class="price-range__tabs"><button class="price-range__tab active">ETH</button> <button class="price-range__tab">USDT</button></div></div><div class="price-range__items"><button class="price-range__item item-price-range"><h5 class="item-price-range__title">Min price</h5><div class="item-price-range__price">0.002</div><div class="item-price-range__pair">USDT per ETH</div><p class="item-price-range__descr">Your position will be 100% composed of USDT at this price</p></button> <button class="price-range__item item-price-range"><h5 class="item-price-range__title">Max price</h5><div class="item-price-range__price">0.002</div><div class="item-price-range__pair">USDT per ETH</div><p class="item-price-range__descr">Your position will be 100% composed of USDT at this price</p></button> <button class="price-range__item item-price-range item-price-range--current"><h5 class="item-price-range__title">Current price</h5><div class="item-price-range__price">0.00174</div><div class="item-price-range__pair">USDT per ETH</div></button></div></div><button class="liquidity__button button" data-path="waiting" data-animation="fadeInUp">Add</button></div></div></div></body></html>
+    </div>
+    <!-- <div class="wallet-balance__trend wallet-balance__trend--fall">
+      <svg class="wallet-balance__trend-icon">
+        <use xlink:href="img/sprite.svg#arrow-big"></use>
+      </svg>
+      <span class="wallet-balance__trend-sum">$56.87</span>
+      <span class="wallet-balance__trend-pc">(0.82%)</span>
+    </div> -->
+  </div>
+  <div class="wallet__actions">
+    <a href="#" class="wallet__action wallet__action--buy">
+      <svg class="wallet__action-icon">
+        <use xlink:href="img/sprite.svg#card"></use>
+      </svg>
+      <p class="wallet__action-text">Buy</p>
+    </a>
+    <a href="#" class="wallet__action wallet__action--view">
+      <svg class="wallet__action-icon">
+        <use xlink:href="img/sprite.svg#view"></use>
+      </svg>
+      <p class="wallet__action-text">View NFTs</p>
+    </a>
+  </div>
+  <div class="wallet__line"></div>
+  <div class="wallet__tabs">
+    <nav class="wallet__tabs-navigation">
+      <button class="wallet__tab-title">Tokens</button>
+      <button class="wallet__tab-title">NFTs</button>
+      <button class="wallet__tab-title">Pools</button>
+      <button class="wallet__tab-title active">Activity</button>
+    </nav>
+    <div class="wallet__tabs-content assets">
+      <div class="wallet__tabs-body assets__item">
+        <div class="assets__item-token">
+          <img src="./img/cryptocurrency/ethereum.svg" alt="token" class="assets__item-icon">
+          <div class="assets__item-info">
+            <p class="assets__item-name">Ethereum</p>
+            <div class="assets__item-trend">
+              <span class="assets__item-trend-sum">$2.44</span>
+              <span class="assets__item-trend-pc">+4.73%</span>
+            </div>
+          </div>
+        </div>
+        <div class="assets__item-sum">
+          <span class="assets__item-amount">7 153.13</span>
+          <span class="assets__item-usd">$17,437.81</span>
+        </div>
+      </div>
+      <div class="wallet__tabs-body assets__item">
+        <div class="assets__item-token">
+          <img src="./img/cryptocurrency/bitcoin.svg" alt="token" class="assets__item-icon">
+          <div class="assets__item-info">
+            <p class="assets__item-name">Bitcoin</p>
+            <div class="assets__item-trend assets__item-trend--fall">
+              <span class="assets__item-trend-sum">$64.723.12</span>
+              <span class="assets__item-trend-pc">-1.22%</span>
+            </div>
+          </div>
+        </div>
+        <div class="assets__item-sum">
+          <span class="assets__item-amount">12.26</span>
+          <span class="assets__item-usd">$620,372.13</span>
+        </div>
+      </div>
+      <div class="wallet__tabs-body assets__item">
+        <div class="assets__item-token">
+          <img src="./img/cryptocurrency/polygon.svg" alt="token" class="assets__item-icon">
+          <div class="assets__item-info">
+            <p class="assets__item-name">Polygon</p>
+            <div class="assets__item-trend">
+              <span class="assets__item-trend-sum">$134.44</span>
+              <span class="assets__item-trend-pc">+1.22%</span>
+            </div>
+          </div>
+        </div>
+        <div class="assets__item-sum">
+          <span class="assets__item-amount">12.26</span>
+          <span class="assets__item-usd">$620,372.13</span>
+        </div>
+      </div>
+      <div class="wallet__tabs-body assets__item">
+        <div class="assets__item-token">
+          <img src="./img/cryptocurrency/dogecoin.svg" alt="token" class="assets__item-icon">
+          <div class="assets__item-info">
+            <p class="assets__item-name">Dogecoin</p>
+            <div class="assets__item-trend">
+              <span class="assets__item-trend-sum">$134.44</span>
+              <span class="assets__item-trend-pc">+1.22%</span>
+            </div>
+          </div>
+        </div>
+        <div class="assets__item-sum">
+          <span class="assets__item-amount">12.26</span>
+          <span class="assets__item-usd">$620,372.13</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+    <header class="header">
+  <div class="header__container">
+    <a href="#" class="header__logo logo">
+      <svg class="header__logo-icon logo-icon">
+        <use xlink:href="img/sprite.svg#logo"></use>
+      </svg>
+      <p class="header__logo-text logo-text">SAWA</p>
+    </a>
+    <nav class="header__menu menu">
+      <ul class="menu__list">
+        <li class="menu__item"><a href="#" class="menu__link active">Swap</a></li>
+        <li class="menu__item"><a href="#" class="menu__link">Pool</a></li>
+      </ul>
+    </nav>
+    <div class="header__search">
+      <form action="#" class="header__search-form search-form">
+        <input class="search-form__input" autocomplete="off" type="text" placeholder="Search Tokens">
+        <button type="submit" class="search-form__btn">
+          <svg class="search-form__btn-icon">
+            <use xlink:href="img/sprite.svg#search"></use>
+          </svg>
+        </button>
+      </form>
+    </div>
+    <button type="button" class="icon-menu icon-menu--burger js-wallet-open"><span></span></button>
+    <div class="header__wallet wallet-header">
+      <a href="#" class="wallet-header__img wallet-img">
+        <svg class="wallet-header__icon wallet-icon" >
+          <use xlink:href="img/sprite.svg#logo-icon"></use>
+        </svg>
+      </a>
+      <button class="wallet-header__btn js-wallet-open ">
+        <span class="wallet-header__address">0×235…643657</span>
+        <svg class="wallet-header__arrow">
+          <use xlink:href="img/sprite.svg#arrow"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+    <main class="page">
+
+      <div class="page__container">
+        <div class="liquidity card">
+          <a href="#" class="liquidity__btn-back ">
+            <svg class="liquidity__btn-icon icon-back">
+              <use xlink:href="img/sprite.svg#arrows"></use>
+            </svg>
+          </a>
+          <h2 class="liquidity__title">Add liquidity</h2>
+          <div class="liquidity__header">
+            <div class="liquidity__header-pair pair-token">
+              <div class="pair-token__icons">
+                <img class="pair-token__image pair-token__image--1" src="./img/cryptocurrency/ethereum2.svg"
+                  alt="token">
+                <img class="pair-token__image pair-token__image--2" src="./img/cryptocurrency/tether.svg" alt="token">
+              </div>
+              <div class="pair-token__names">
+                <span class="pair-token__name pair-token__name--1">ETH</span><span>/</span><span
+                  class="pair-token__name pair-token__name--2">USDT</span>
+              </div>
+            </div>
+            <a href="#" class="liquidity__header-link link-range">out range</a>
+          </div>
+          <div class="liquidity__table">
+            <div class="liquidity__table-row">
+              <div class="liquidity__table-header token">
+                <img class="token__icon" src="./img/cryptocurrency/ethereum2.svg" alt="token">
+                <p class="token__name">ETH</p>
+              </div>
+              <div class="liquidity__table-data">1.000</div>
+            </div>
+            <div class="liquidity__table-row">
+              <div class="liquidity__table-header token">
+                <img class="token__icon" src="./img/cryptocurrency/usdt.svg" alt="token">
+                <p class="token__name">USDT</p>
+              </div>
+              <div class="liquidity__table-data">0.006</div>
+            </div>
+            <div class="liquidity__table-row">
+              <div class="liquidity__table-header">Fee tier</div>
+              <div class="liquidity__table-data">0.05%</div>
+            </div>
+          </div>
+          <div class="liquidity__price price-range">
+            <div class="price-range__header">
+              <h4 class="price-range__title">Select range</h4>
+              <div class="price-range__tabs">
+                <button class="price-range__tab active">ETH</button>
+                <button class="price-range__tab">USDT</button>
+              </div>
+            </div>
+            <div class="price-range__items">
+              <button class="price-range__item item-price-range">
+                <h5 class="item-price-range__title">Min price</h5>
+                <div class="item-price-range__price">0.002</div>
+                <div class="item-price-range__pair">USDT per ETH</div>
+                <p class="item-price-range__descr">Your position will be 100% composed of USDT at this price</p>
+              </button>
+              <button class="price-range__item item-price-range">
+                <h5 class="item-price-range__title">Max price</h5>
+                <div class="item-price-range__price">0.002</div>
+                <div class="item-price-range__pair">USDT per ETH</div>
+                <p class="item-price-range__descr">Your position will be 100% composed of USDT at this price</p>
+              </button>
+              <button class="price-range__item item-price-range item-price-range--current">
+                <h5 class="item-price-range__title">Current price</h5>
+                <div class="item-price-range__price">0.00174</div>
+                <div class="item-price-range__pair">USDT per ETH</div>
+              </button>
+            </div>
+          </div>
+          <div class="liquidity__deposit">
+            <h4 class="liquidity__deposit-title">Deposit amounts</h4>
+            <div class="liquidity__deposit-input input">
+              <div class="input__item">
+                <input type="text" value="0" class="input__control">
+                <button data-path="select-token" data-animation="fadeInUp" class="input__select">
+                  <div class="input__select-token token">
+                    <img class="token__icon" src="./img/cryptocurrency/usdc.svg" alt="usdc">
+                    <p class="token__name">USDC</p>
+                  </div>
+                  <svg class="input__select-icon">
+                    <use xlink:href="img/sprite.svg#arrow"></use>
+                  </svg>
+                </button>
+              </div>
+              <div class="input__balance">
+                <div class="input__balance-col">
+                  <p class="input__balance-text">$1.00
+                  </p>
+                </div>
+                <div class="input__balance-col">
+                  <p class="input__balance-text">Balance: 0.011</p>
+                  <a href="#" class="input__balance-text link-red">Max</a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <button class="liquidity__button button">Preview</button>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+
+  <div class="footer__container ">
+    <div class="footer__top">
+      <a href="#" class="footer__logo logo">
+        <svg class="footer__logo-icon logo-icon logo-icon--white">
+          <use xlink:href="img/sprite.svg#logo"></use>
+        </svg>
+        <p class="footer__logo-text logo-text logo-text--white">SAWA</p>
+      </a>
+      <div class="footer__top-text">
+        SAWA is a decentralized multi-chain fundraising platform enabling projects to raise capital and promise safety
+        to early stage investors. Stake Infinite Launch tokens to get priority-access to promising projects.
+      </div>
+    </div>
+    <div class="footer__main">
+      <div data-spollers="768,max" data-one-spoller class="footer__menu menu-footer">
+        <div class="menu-footer__column">
+          <button type="button" data-spoller class="menu-footer__title">General</button>
+          <ul class="menu-footer__list">
+            <li><a href="#" class="menu-footer__link">Lock Tier
+              </a></li>
+            <li><a href="#" class="menu-footer__link">Stake/Farm token
+              </a></li>
+            <li><a href="#" class="menu-footer__link">Privacy Policy
+              </a></li>
+            <li><a href="#" class="menu-footer__link">Terms of use
+              </a></li>
+            <li><a href="#" class="menu-footer__link">About us
+              </a></li>
+            <li><a href="#" class="menu-footer__link">Apply to Launch
+              </a></li>
+          </ul>
+        </div>
+        <div class="menu-footer__column">
+          <button type="button" data-spoller class="menu-footer__title">Help</button>
+          <ul class="menu-footer__list">
+            <li><a href="#" class="menu-footer__link">How to join IDO
+              </a></li>
+            <li><a href="#" class="menu-footer__link">FAQ</a></li>
+
+          </ul>
+        </div>
+        <div class="menu-footer__column">
+          <button type="button" data-spoller class="menu-footer__title">Communities</button>
+          <ul class="menu-footer__list">
+            <li><a href="#" class="menu-footer__link">Indonesia</a></li>
+            <li><a href="#" class="menu-footer__link">О Turkey</a></li>
+            <li><a href="#" class="menu-footer__link">China</a></li>
+            <li><a href="#" class="menu-footer__link">VietNam</a></li>
+            <li><a href="#" class="menu-footer__link">Thailand</a></li>
+          </ul>
+        </div>
+        <div class="menu-footer__column">
+          <button type="button" data-spoller class="menu-footer__title">Token</button>
+          <ul class="menu-footer__list">
+            <li><a href="#" class="menu-footer__link">CoinGecko</a></li>
+            <li><a href="#" class="menu-footer__link">CoinMarketCap</a></li>
+            <li><a href="#" class="menu-footer__link">CryptoRank</a></li>
+          </ul>
+        </div>
+
+      </div>
+      <div class="footer__socials">
+
+          <a href="#" class="footer__socials-item">
+            <svg class="footer__socials-icon">
+              <use xlink:href="img/sprite.svg#twitter"></use>
+            </svg>
+          </a>
+          <a href="#" class="footer__socials-item">
+            <svg class="footer__socials-icon">
+              <use xlink:href="img/sprite.svg#telegram"></use>
+            </svg>
+          </a>
+          <a href="#" class="footer__socials-item">
+            <svg class="footer__socials-icon">
+              <use xlink:href="img/sprite.svg#discord"></use>
+            </svg>
+          </a>
+
+      </div>
+    </div>
+
+  </div>
+  </div>
+
+</footer>
+
+  </div>
+
+  <div class="modal">
+
+  <!-- Select a token -->
+  <div class="modal__container" role="dialog" aria-modal="true" data-target="select-token">
+    <button class=" modal__close js-modal-close" aria-label="close modal">
+
+      <svg class="modal__close-icon">
+        <use xlink:href="img/sprite.svg#close"></use>
+      </svg>
+    </button>
+    <h2 class="modal__title">Select a token</h2>
+    <div class="modal__body modal-select-token">
+      <form action="#" class="modal-select-token__search search-form">
+        <input class="search-form__input" autocomplete="off" type="text" placeholder="Search Tokens">
+        <button type="submit" class="search-form__btn">
+          <svg class="search-form__btn-icon">
+            <use xlink:href="img/sprite.svg#search"></use>
+          </svg>
+        </button>
+      </form>
+      <div class="modal-select-token__list">
+        <button class="modal-select-token__btn token">
+          <img class="token__icon" src="./img/cryptocurrency/ethereum2.svg" alt="token">
+          <p class="token__name">ETH</p>
+        </button>
+        <button class="modal-select-token__btn token">
+          <img class="token__icon" src="./img/cryptocurrency/dai.svg" alt="token">
+          <p class="token__name">DAI</p>
+        </button>
+        <button class="modal-select-token__btn token">
+          <img class="token__icon" src="./img/cryptocurrency/usdc.svg" alt="token">
+          <p class="token__name">USDC</p>
+        </button>
+        <button class="modal-select-token__btn token">
+          <img class="token__icon" src="./img/cryptocurrency/usdt.svg" alt="token">
+          <p class="token__name">USDT</p>
+        </button>
+      </div>
+      <div class="modal-select-token__separation line-separation"></div>
+      <h3 class="modal-select-token__title">
+        Your tokens
+      </h3>
+      <div class="modal-select-token__assets assets">
+        <button class="modal-select-token__item assets__item">
+          <div class="assets__item-token">
+            <img src="../img/cryptocurrency/ethereum.svg" alt="token" class="assets__item-icon">
+            <div class="assets__item-info">
+              <p class="assets__item-name">Ethereum</p>
+              <div class="assets__item-name-short">
+                ETH
+              </div>
+            </div>
+          </div>
+          <div class="assets__item-sum">
+            <span class="assets__item-amount">7 153.13</span>
+          </div>
+        </button>
+        <button class="modal-select-token__item assets__item">
+          <div class="assets__item-token">
+            <img src="../img/cryptocurrency/bitcoin.svg" alt="token" class="assets__item-icon">
+            <div class="assets__item-info">
+              <p class="assets__item-name">Bitcoin</p>
+              <div class="assets__item-name-short">
+                BTC
+              </div>
+            </div>
+          </div>
+          <div class="assets__item-sum">
+            <span class="assets__item-amount">12.26</span>
+          </div>
+        </button>
+        <button class="modal-select-token__item assets__item">
+          <div class="assets__item-token">
+            <img src="../img/cryptocurrency/polygon.svg" alt="token" class="assets__item-icon">
+            <div class="assets__item-info">
+              <p class="assets__item-name">Polygon</p>
+              <div class="assets__item-name-short">
+                MATIC
+              </div>
+            </div>
+          </div>
+          <div class="assets__item-sum">
+            <span class="assets__item-amount">494.23</span>
+          </div>
+        </button>
+        <button class="modal-select-token__item assets__item">
+          <div class="assets__item-token">
+            <img src="../img/cryptocurrency/dogecoin.svg" alt="token" class="assets__item-icon">
+            <div class="assets__item-info">
+              <p class="assets__item-name">Dogecoin</p>
+              <div class="assets__item-name-short">
+                DOGE
+              </div>
+            </div>
+          </div>
+          <div class="assets__item-sum">
+            <span class="assets__item-amount">7 153.13</span>
+          </div>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Confirm swap -->
+  <div class="modal__container" role="dialog" aria-modal="true" data-target="сonfirm-swap">
+    <button class=" modal__close js-modal-close" aria-label="close modal">
+
+      <svg class="modal__close-icon">
+        <use xlink:href="img/sprite.svg#close"></use>
+      </svg>
+    </button>
+    <h2 class="modal__title">Confirm swap</h2>
+    <div class="modal__body modal-confirm-swap">
+      <div class="modal-confirm-swap__review review-swap">
+        <div class="review-swap__item">
+          <label class="review-swap__item-label">You pay</label>
+          <div class="review-swap__item-token">
+            <div class="review-swap__item-amount">1.00 USDT</div>
+            <img class="review-swap__item-icon" src="./img/cryptocurrency/tether.svg" alt="token">
+          </div>
+          <div class="review-swap__item-sum">
+            $1.00
+          </div>
+        </div>
+        <div class="review-swap__separation line-separation"></div>
+        <div class="review-swap__item">
+          <label class="review-swap__item-label">You receive</label>
+          <div class="review-swap__item-token">
+            <div class="review-swap__item-amount">0.99935 USDC</div>
+            <img class="review-swap__item-icon" src="./img/cryptocurrency/usdc.svg" alt="token">
+          </div>
+          <div class="review-swap__item-sum">
+            $1.00
+            <span class="review-swap__item-pc"> (-0.03%)</span>
+          </div>
+        </div>
+      </div>
+      <div class="modal-confirm-swap__separation line-separation"></div>
+      <div class="modal-confirm-swap__step confirm-stet">
+        <div class="confirm-stet__item">
+          <div class="confirm-stet__check">
+            <svg class="confirm-stet__icon">
+              <use xlink:href="img/sprite.svg#check"></use>
+            </svg>
+          </div>
+          <p class="confirm-stet__text">Sign message</p>
+        </div>
+        <div class="confirm-stet__item">
+          <div class="confirm-stet__swap">
+            <svg class="confirm-stet__icon">
+              <use xlink:href="img/sprite.svg#swap"></use>
+            </svg>
+          </div>
+          <p class="confirm-stet__text">Confirm swap in wallet <span class="confirm-stet__text-gray">Learn more about
+              swap</span></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Swap Success! -->
+  <div class="modal__container" role="dialog" aria-modal="true" data-target="swap-success">
+    <button class=" modal__close js-modal-close" aria-label="close modal">
+
+      <svg class="modal__close-icon">
+        <use xlink:href="img/sprite.svg#close"></use>
+      </svg>
+    </button>
+
+    <div class="modal__body modal-success">
+      <svg class="modal-success__icon">
+        <use xlink:href="img/sprite.svg#check-success"></use>
+      </svg>
+      <h2 class="modal-success__title">Swap Success!</h2>
+      <div class="modal-success__swap">
+        <div class="modal-success__swap-item">
+          <img src="./img/cryptocurrency/tether.svg" alt="token">
+          <div class="modal-success__swap-amount">1.00 USDT</div>
+        </div>
+        <div class="modal-success__swap-item">
+          <svg class="modal-success__swap-icon">
+            <use xlink:href="img/sprite.svg#arrow-big"></use>
+          </svg>
+        </div>
+        <div class="modal-success__swap-item">
+          <img src="./img/cryptocurrency/usdc.svg" alt="token">
+          <div class="modal-success__swap-amount">1.00065 USDC</div>
+        </div>
+      </div>
+      <button class="modal-success__button button js-modal-close">Main Page</button>
+    </div>
+  </div>
+
+  <!-- Remove liquidity -->
+  <div class="modal__container" role="dialog" aria-modal="true" data-target="remove-liquidity">
+    <button class=" modal__close js-modal-close" aria-label="close modal">
+
+      <svg class="modal__close-icon">
+        <use xlink:href="img/sprite.svg#close"></use>
+      </svg>
+    </button>
+    <h2 class="modal__title">Remove liquidity</h2>
+    <div class="modal__body modal-remove-liquidity">
+      <div class="liquidity__table liquidity__table--reverse">
+        <div class="liquidity__table-row">
+          <div class="liquidity__table-data token token--reverse">
+            <img class="token__icon" src="./img/cryptocurrency/ethereum2.svg" alt="token">
+            <p class="token__amount">0.004</p>
+          </div>
+          <div class="liquidity__table-header">Pooled ETH:</div>
+        </div>
+        <div class="liquidity__table-row">
+          <div class="liquidity__table-header token token--reverse">
+            <img class="token__icon" src="./img/cryptocurrency/usdt.svg" alt="token">
+            <p class="token__amount">0</p>
+          </div>
+          <div class="liquidity__table-header">Pooled USDT:</div>
+        </div>
+        <p class="liquidity__table-text">You will also collect fees earned from this position</p>
+        <div class="liquidity__table-row">
+          <div class="liquidity__table-data token token--reverse">
+            <img class="token__icon" src="./img/cryptocurrency/ethereum2.svg" alt="token">
+            <p class="token__amount">0.004</p>
+          </div>
+          <div class="liquidity__table-header">USDT fees earned:</div>
+        </div>
+        <div class="liquidity__table-row">
+          <div class="liquidity__table-header token token--reverse">
+            <img class="token__icon" src="./img/cryptocurrency/usdt.svg" alt="token">
+            <p class="token__amount">0</p>
+          </div>
+          <div class="liquidity__table-header">ETH fees earned:</div>
+        </div>
+      </div>
+      <button class="liquidity__button button " data-path="waiting" data-animation="fadeInUp">Remove</button>
+    </div>
+
+  </div>
+
+  <!-- waiting -->
+  <div class="modal__container" role="dialog" aria-modal="true" data-target="waiting">
+    <button class=" modal__close js-modal-close" aria-label="close modal">
+      <svg class="modal__close-icon">
+        <use xlink:href="img/sprite.svg#close"></use>
+      </svg>
+    </button>
+    <div class="modal__body modal-waiting">
+      <div class="modal-waiting__progress">
+        <img src="./img/svg/progress.svg" alt="progress">
+      </div>
+      <h2 class="modal-waiting__title">Waiting for confirmation</h2>
+      <div class="modal-waiting__liquidity">Supplying 0.006898976 ETH and 1 USDT</div>
+      <p class="modal-waiting__text">
+        Confirm this transaction in your wallet
+      </p>
+    </div>
+  </div>
+
+  <!--Transaction Submitted  -->
+  <div class="modal__container" role="dialog" aria-modal="true" data-target="">
+    <button class=" modal__close js-modal-close" aria-label="close modal">
+      <svg class="modal__close-icon">
+        <use xlink:href="img/sprite.svg#close"></use>
+      </svg>
+    </button>
+    <div class="modal__body modal-transaction-success">
+      <svg class="modal-transaction-success__icon">
+        <use xlink:href="img/sprite.svg#check-success"></use>
+      </svg>
+      <h2 class="modal-transaction-success__title">Transaction Submitted</h2>
+
+      <button class="modal-transaction-success__button button js-modal-close">Close</button>
+    </div>
+  </div>
+
+  <!-- Add liquidity -->
+  <div class="modal__container" role="dialog" aria-modal="true" data-target="add-liquidity">
+    <button class=" modal__close js-modal-close" aria-label="close modal">
+
+      <svg class="modal__close-icon">
+        <use xlink:href="img/sprite.svg#close"></use>
+      </svg>
+    </button>
+    <h2 class="modal__title">Add liquidity</h2>
+    <div class="modal__body modal-add-liquidity">
+          <div class="liquidity__header">
+            <div class="liquidity__header-pair pair-token">
+              <div class="pair-token__icons">
+                <img class="pair-token__image pair-token__image--1" src="./img/cryptocurrency/ethereum2.svg"
+                  alt="token">
+                <img class="pair-token__image pair-token__image--2" src="./img/cryptocurrency/tether.svg" alt="token">
+              </div>
+              <div class="pair-token__names">
+                <span class="pair-token__name pair-token__name--1">ETH</span><span>/</span><span
+                  class="pair-token__name pair-token__name--2">USDT</span>
+              </div>
+            </div>
+            <a href="#" class="liquidity__header-link link-range">in range</a>
+          </div>
+          <div class="liquidity__table">
+            <div class="liquidity__table-row">
+              <div class="liquidity__table-header token">
+                <img class="token__icon" src="./img/cryptocurrency/ethereum2.svg" alt="token">
+                <p class="token__name">ETH</p>
+              </div>
+              <div class="liquidity__table-data">1.000</div>
+            </div>
+            <div class="liquidity__table-row">
+              <div class="liquidity__table-header token">
+                <img class="token__icon" src="./img/cryptocurrency/usdt.svg" alt="token">
+                <p class="token__name">USDT</p>
+              </div>
+              <div class="liquidity__table-data">0.006</div>
+            </div>
+            <div class="liquidity__table-row">
+              <div class="liquidity__table-header">Fee tier</div>
+              <div class="liquidity__table-data">0.05%</div>
+            </div>
+          </div>
+          <div class="liquidity__price price-range">
+            <div class="price-range__header">
+              <h4 class="price-range__title">Set price range</h4>
+              <div class="price-range__tabs">
+                <button class="price-range__tab active">ETH</button>
+                <button class="price-range__tab">USDT</button>
+              </div>
+            </div>
+            <div class="price-range__items">
+              <button class="price-range__item item-price-range">
+                <h5 class="item-price-range__title">Min price</h5>
+                <div class="item-price-range__price">0.002</div>
+                <div class="item-price-range__pair">USDT per ETH</div>
+                <p class="item-price-range__descr">Your position will be 100% composed of USDT at this price</p>
+              </button>
+              <button class="price-range__item item-price-range">
+                <h5 class="item-price-range__title">Max price</h5>
+                <div class="item-price-range__price">0.002</div>
+                <div class="item-price-range__pair">USDT per ETH</div>
+                <p class="item-price-range__descr">Your position will be 100% composed of USDT at this price</p>
+              </button>
+              <button class="price-range__item item-price-range item-price-range--current">
+                <h5 class="item-price-range__title">Current price</h5>
+                <div class="item-price-range__price">0.00174</div>
+                <div class="item-price-range__pair">USDT per ETH</div>
+              </button>
+            </div>
+          </div>
+
+      <button class="liquidity__button button " data-path="waiting" data-animation="fadeInUp">Add</button>
+    </div>
+
+  </div>
+
+</div>
+
+</body>
+
+</html>
