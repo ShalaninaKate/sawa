@@ -163,8 +163,8 @@
     </a>
     <nav class="header__menu menu">
       <ul class="menu__list">
-        <li class="menu__item"><a href="#" class="menu__link active">Swap</a></li>
-        <li class="menu__item"><a href="#" class="menu__link">Pool</a></li>
+        <li class="menu__item"><a href="#" class="menu__link ">Swap</a></li>
+        <li class="menu__item"><a href="#" class="menu__link active">Pool</a></li>
       </ul>
     </nav>
     <div class="header__search">
@@ -285,7 +285,7 @@
                   <div class="price-range__item set-price-range">
                     <div class="set-price-range__body">
                       <h5 class="set-price-range__title">Low price</h5>
-                      <div class="set-price-range__price">575.755</div>
+                      <input type="number" min="0" value="575.755" class="set-price-range__price">
                       <div class="set-price-range__pair">USDT per ETH</div>
                     </div>
                     <div class="set-price-range__count">
@@ -296,7 +296,7 @@
                   <div class="price-range__item set-price-range">
                     <div class="set-price-range__body">
                       <h5 class="set-price-range__title">High price</h5>
-                      <div class="set-price-range__price">577.8975</div>
+                      <input type="number" min="0" value="577.8975" class="set-price-range__price">
                       <div class="set-price-range__pair">USDT per ETH</div>
                     </div>
                     <div class="set-price-range__count">
@@ -334,7 +334,7 @@
               <div class="add-liquidity__item-body deposit-amount">
                 <div class="deposit-amount__input input">
                   <div class="input__item">
-                    <input type="text" value="0.0004" class="input__control">
+                    <input type="number" min="0" value="0.0004" class="input__control">
                     <button data-path="select-token" data-animation="fadeInUp" class="input__select">
                       <div class="input__select-token token">
                         <img class="token__icon" src="./img/cryptocurrency/ethereum2.svg" alt="token">
@@ -347,7 +347,7 @@
                   </div>
                   <div class="input__balance">
                     <div class="input__balance-col">
-                      <p class="input__balance-text">$$5.23
+                      <p class="input__balance-text">$5.23
                       </p>
                     </div>
                     <div class="input__balance-col">
@@ -358,7 +358,7 @@
                 </div>
                 <div class="deposit-amount__input input">
                   <div class="input__item">
-                    <input type="text" value="0.0004" class="input__control">
+                    <input type="number" min="0" value="0.0004" class="input__control">
                     <button data-path="select-token" data-animation="fadeInUp" class="input__select">
                       <div class="input__select-token token">
                         <img class="token__icon" src="./img/cryptocurrency/usdt.svg" alt="token">
@@ -503,14 +503,14 @@
     <div class="modal__body modal-select-token">
       <form action="#" class="modal-select-token__search search-form">
         <input class="search-form__input" autocomplete="off" type="text" placeholder="Search Tokens">
-        <button type="submit" class="search-form__btn">
+        <button type="submit" class="search-form__btn ">
           <svg class="search-form__btn-icon">
             <use xlink:href="img/sprite.svg#search"></use>
           </svg>
         </button>
       </form>
       <div class="modal-select-token__list">
-        <button class="modal-select-token__btn token">
+        <button class="modal-select-token__btn active token">
           <img class="token__icon" src="./img/cryptocurrency/ethereum2.svg" alt="token">
           <p class="token__name">ETH</p>
         </button>
